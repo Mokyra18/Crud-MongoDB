@@ -20,6 +20,7 @@ const getProducts = async () => {
 };
 
 export default async function List() {
+  
   const { products } = await getProducts();
 
   return (
