@@ -39,12 +39,11 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 max-w-md mx-auto bg-white p-8 shadow-md rounded-md mt-10">
-      <h2 className="text-2xl font-bold mb-4">Edit Product</h2>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3">
            <input
         onChange={e => setNewTitle(e.target.value)}
         value={newTitle}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Product Category"
       />
@@ -52,7 +51,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
 <input
         onChange={e => setNewName(e.target.value)}
         value={newName}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Product Name"
       />
@@ -60,7 +59,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
       <input
         onChange={e => setNewQuantity(e.target.value)}
         value={newQuantity}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="number"
         placeholder="Quantity"
       />
@@ -68,7 +67,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
       <input
         onChange={e => setNewPrice(e.target.value)}
         value={newPrice}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Product Price"
       />
@@ -76,7 +75,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
       <input
         onChange={e => setNewBrand(e.target.value)}
         value={newBrand}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Product Brand"
       />
@@ -84,7 +83,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
       <input
         onChange={e => setNewSeller(e.target.value)}
         value={newSeller}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Seller"
       />
@@ -92,7 +91,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
       <input
         onChange={e => setNewPayment(e.target.value)}
         value={newPayment}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Payment Method"
       />
@@ -100,7 +99,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
       <input
         onChange={e => setNewDescription(e.target.value)}
         value={newDescription}
-        className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+        className="border border-slate-500 px-8 py-2"
         type="text"
         placeholder="Product Description"
       />
