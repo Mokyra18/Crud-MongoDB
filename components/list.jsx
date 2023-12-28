@@ -3,9 +3,9 @@ import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
 
 const getProducts = async () => {
-  const apiUrl = process.env.API_URL;
+  // const apiUrl = process.env.API_URL;
   try {
-    const res = await fetch(`${apiUrl}/api/products`, {
+    const res = await fetch(`https://mokyra-crud.netlify.app/api/products`, {
       cache: "no-store",
     });
 
