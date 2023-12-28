@@ -19,7 +19,7 @@ export default function EditProductForm({ id, title, name, quantity, price, bran
     e.preventDefault();
 
     try {
-      const res = await fetch(`/api/products/${id}`, {
+      const res = await fetch(`https://crud-mongodb.up.railway.app/api/products/${id}`, {
         method: "PUT",
         headers: {
           "Content-type": "application/json",
