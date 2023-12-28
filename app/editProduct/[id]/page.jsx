@@ -4,7 +4,7 @@ const getProductById = async (id) => {
   const apiUrl = process.env.API_URL;
 
   try {
-    const res = await fetch(`${apiUrl}/api/products/${id}`, {
+    const res = await fetch(`https://crud-mongodb.up.railway.app/api/products/${id}`, {
       cache: "no-store",
     });
 
