@@ -24,7 +24,7 @@ export default function AddProduct() {
     }
 
     try {
-      const res = await fetch("https://mokyra-crud.netlify.app/api/products", {
+      const res = await fetch("/api/products", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

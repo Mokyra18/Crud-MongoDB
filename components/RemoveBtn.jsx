@@ -9,7 +9,7 @@ export default function RemoveBtn({ id }) {
     const confirmed = confirm("Are you sure?");
 
     if (confirmed) {
-      const res = await fetch(`https://mokyra-crud.netlify.app/api/products?id=${id}`, {
+      const res = await fetch(`/api/products?id=${id}`, {
         method: "DELETE",
       });
 

@@ -1,8 +1,10 @@
 import EditProductForm from "@/components/EditProductForm";
 
 const getProductById = async (id) => {
+  const apiUrl = process.env.API_URL;
+
   try {
-    const res = await fetch(`https://mokyra-crud.netlify.app/api/products/${id}`, {
+    const res = await fetch(`${apiUrl}/api/products/${id}`, {
       cache: "no-store",
     });
 
