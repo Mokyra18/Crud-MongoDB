@@ -1,7 +1,7 @@
 import EditProductForm from "@/components/EditProductForm";
 
 const getProductById = async (id) => {
-  const apiUrl = process.env.API_URL;
+  // const apiUrl = process.env.API_URL;
 
   try {
     const res = await fetch(`https://crud-mongodb.up.railway.app/api/products/${id}`, {
