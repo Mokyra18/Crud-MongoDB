@@ -44,14 +44,13 @@ export default function AddProduct() {
   };
 
   return (
-<form onSubmit={handleSubmit} className="flex flex-col gap-3 max-w-md mx-auto bg-white p-8 shadow-md rounded-md mt-10">
-  <h2 className="text-2xl font-bold mb-4">Add Product</h2>
+<form onSubmit={handleSubmit} className="flex flex-col gap-3">
 
   <div className="mb-4">
     <input
       onChange={(e) => setTitle(e.target.value)}
       value={title}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="text"
       placeholder="Product Category"
     />
@@ -61,7 +60,7 @@ export default function AddProduct() {
     <input
       onChange={(e) => setName(e.target.value)}
       value={name}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="text"
       placeholder="Product Name"
     />
@@ -71,7 +70,7 @@ export default function AddProduct() {
     <input
       onChange={(e) => setQuantity(e.target.value)}
       value={quantity}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="number"
       placeholder="Quantity"
     />
@@ -81,7 +80,7 @@ export default function AddProduct() {
     <input
       onChange={(e) => setPrice(e.target.value)}
       value={price}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="number"
       placeholder="Product Price"
     />
@@ -91,7 +90,7 @@ export default function AddProduct() {
     <input
       onChange={(e) => setBrand(e.target.value)}
       value={brand}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="text"
       placeholder="Product Brand"
     />
@@ -101,7 +100,7 @@ export default function AddProduct() {
     <input
       onChange={(e) => setSeller(e.target.value)}
       value={seller}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="text"
       placeholder="Seller"
     />
@@ -111,7 +110,7 @@ export default function AddProduct() {
     <input
       onChange={(e) => setPayment(e.target.value)}
       value={payment}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="text"
       placeholder="Payment Method"
     />
@@ -121,7 +120,7 @@ export default function AddProduct() {
     <input
       onChange={(e) => setDescription(e.target.value)}
       value={description}
-      className="input-field w-full resize-none border border-gray-300 p-2 rounded-md"
+      className="border border-slate-500 px-8 py-2"
       type="text"
       placeholder="Product Description"
     />
@@ -129,7 +128,7 @@ export default function AddProduct() {
 
   <button
     type="submit"
-    className="bg-green-600 font-bold text-white py-3 px-6 rounded-md"
+    className="bg-green-600 font-bold text-white py-3 px-6 w-fit"
   >
     Add Product
   </button>
